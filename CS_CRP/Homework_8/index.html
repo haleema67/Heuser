@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forest</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+
+    <a href="https://haleema67.github.io/Heuser/CS_CRP/Homework_6/" class="moon" title="Travel to the Past (HW 6)">
+        <div class="moon-text">The Past</div>
+    </a>
+
+    <div class="center-portal">
+        <img src="your-image.jpg" alt="A wanderer" class="profile-pic">
+        <div class="glow"></div>
+        <h2 class="portal-text">Who am I?</h2>
+    </div>
+
+    <div class="mushroom-group">
+        <div class="mushroom" onclick="showText('achievement')">
+            <div class="mushroom-text">Achievements</div>
+        </div>
+        <div class="mushroom" onclick="showText('aspiration')">
+            <div class="mushroom-text">Aspirations</div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <div class="explanation">
+        <h4>The Concept</h4>
+        <p>This unconventional portfolio abandons the traditional web layout to simulate wandering through a mystical forest. Visitors navigate not by menus, but by exploring glowing objects in the environment, making the discovery of my work feel like a journey rather than a checklist.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body { margin: 0; padding: 0; background-color: #081a11; color: #e0e0e0; font-family: 'Cinzel', serif; overflow-x: hidden; height: 100vh; position: relative; }
+@keyframes float { 0% { transform: translateY(0px) translateX(0px); opacity: 0.5; } 50% { transform: translateY(-20px) translateX(10px); opacity: 1; } 100% { transform: translateY(0px) translateX(0px); opacity: 0.5; } }
+@keyframes pulse { 0% { box-shadow: 0 0 10px #1df25e, 0 0 20px #1df25e; } 50% { box-shadow: 0 0 20px #1df25e, 0 0 40px #1df25e; } 100% { box-shadow: 0 0 10px #1df25e, 0 0 20px #1df25e; } }
+.firefly { position: absolute; width: 8px; height: 8px; background: #ff9d00; border-radius: 50%; box-shadow: 0 0 10px #ff9d00; animation: float 4s infinite ease-in-out; }
+.firefly:nth-child(1) { top: 20%; left: 10%; animation-duration: 5s; }
+.firefly:nth-child(2) { top: 70%; left: 20%; animation-duration: 7s; }
+.firefly:nth-child(3) { top: 30%; left: 80%; animation-duration: 6s; }
+.firefly:nth-child(4) { top: 80%; left: 70%; animation-duration: 8s; }
+.firefly:nth-child(5) { top: 50%; left: 50%; animation-duration: 4s; }
+.moon { position: absolute; top: 5%; right: 10%; width: 80px; height: 80px; background: #7b2cbf; border-radius: 50%; box-shadow: 0 0 30px #7b2cbf; display: flex; align-items: center; justify-content: center; text-decoration: none; color: white; transition: 0.3s; }
+.moon:hover { transform: scale(1.1); box-shadow: 0 0 50px #7b2cbf; }
+.moon-text { opacity: 0; transition: 0.3s; font-size: 14px; text-align: center; }
+.moon:hover .moon-text { opacity: 1; }
+.center-portal { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; cursor: crosshair; }
+.profile-pic { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 4px solid #1df25e; animation: pulse 3s infinite; transition: 0.5s; }
+.center-portal:hover .profile-pic { transform: scale(1.05); filter: brightness(1.2); }
+.portal-text { margin-top: 20px; color: #1df25e; letter-spacing: 2px; }
+.mushroom-group { position: absolute; bottom: 10%; left: 10%; display: flex; gap: 20px; }
+.mushroom { width: 50px; height: 50px; background: #ff9d00; border-radius: 50% 50% 10% 10%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; box-shadow: 0 0 15px #ff9d00; }
+.mushroom:hover { transform: translateY(-10px) scale(1.1); }
+.mushroom-text { opacity: 0; transition: 0.3s; font-size: 12px; color: black; font-weight: bold; position: absolute; top: -30px; white-space: nowrap; }
+.mushroom:hover .mushroom-text { opacity: 1; }
+.popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 100; }
+.popup-content { background: #112c1f; padding: 30px; border: 2px solid #1df25e; border-radius: 10px; max-width: 400px; text-align: center; position: relative; }
+.close-btn { position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #1df25e; }
+.explanation { position: absolute; bottom: 20px; right: 20px; max-width: 300px; background: rgba(8, 26, 17, 0.8); padding: 15px; border-left: 4px solid #7b2cbf; font-size: 12px; line-height: 1.5; }
+.explanation h4 { margin: 0 0 5px 0; color: #7b2cbf; }
